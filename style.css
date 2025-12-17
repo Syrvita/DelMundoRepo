@@ -1,50 +1,200 @@
-/* DARK MODE ENHANCEMENTS */
+/* RESET & BASIC STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #111;
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 16px;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  color: #00aaff;
+}
+
+/* TWO COLUMN FLEX LAYOUT */
+#main-content {
+  display: flex;
+  max-width: 1100px;
+  margin: 40px auto;
+  gap: 30px;
+}
+
+.left-column {
+  flex: 1;
+}
+
+.right-column {
+  flex: 2;
+}
+
+/* PROFILE SECTION */
+.profile-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.job-title {
+  color: gray;
+  font-style: italic;
+}
+
+/* CONTACT SECTION */
+.contact p,
+.contact a {
+  margin: 8px 0;
+  color: #333;
+}
+
+/* SKILLS SECTION */
+.skills {
+  background: #eaeaea;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.skills ul {
+  list-style: none;
+}
+
+.skills li {
+  background: #fff;
+  margin: 6px 0;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* ABOUT ME */
+.about-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* MESSAGE FORM */
+.message-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.message-form input,
+.message-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.message-form input[type="submit"] {
+  background: #111;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.message-form input[type="submit"]:hover {
+  background: #00aaff;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  background: #111;
+  color: #fff;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  #main-content {
+    flex-direction: column;
+  }
+}
+
+/* DARK MODE */
 body.dark-mode {
-    background-color: #121212;
-    color: #f1f1f1;
-    transition: background-color 0.3s, color 0.3s;
+  background-color: #121212;
+  color: #f1f1f1;
 }
 
 body.dark-mode a {
-    color: lightblue;
+  color: lightblue;
 }
 
 body.dark-mode .navbar {
-    background-color: #1f1f1f;
+  background-color: #1f1f1f;
 }
 
 body.dark-mode .profile-box,
 body.dark-mode .about-box,
 body.dark-mode .skills,
 body.dark-mode .message-form {
-    background-color: #1e1e1e;
-    color: #f1f1f1;
+  background-color: #1e1e1e;
+  color: #f1f1f1;
 }
 
 body.dark-mode .job-title {
-    color: #ccc;
+  color: #ccc;
 }
 
 body.dark-mode .skills li {
-    background-color: #2a2a2a;
+  background-color: #2a2a2a;
 }
 
 body.dark-mode button,
 body.dark-mode .message-form input[type="submit"] {
-    background-color: #333;
-    color: #f1f1f1;
-    border: none;
-    cursor: pointer;
+  background-color: #333;
+  color: #f1f1f1;
+  border: none;
+  cursor: pointer;
 }
 
 body.dark-mode input,
 body.dark-mode textarea {
-    background-color: #2a2a2a;
-    color: #f1f1f1;
-    border: 1px solid #555;
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  border: 1px solid #555;
 }
 
 body.dark-mode .footer {
-    background-color: #1f1f1f;
-    color: #f1f1f1;
+  background-color: #1f1f1f;
+  color: #f1f1f1;
 }
+
