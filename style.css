@@ -144,3 +144,25 @@ body {
     flex-direction: column;
   }
 }
+
+/* Default (light mode) */
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+/* Example for links or other elements */
+a {
+    color: blue;
+}
+
+body.dark-mode a {
+    color: lightblue;
+}
